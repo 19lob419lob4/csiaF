@@ -649,7 +649,7 @@ class Menu extends React.Component {
           </div>
         ):(
 
-          <div className='subjectContentWrapper'>
+          <div className='subjectContentWrapper' key={this.state.subjects.length}>
 
             {this.state.editMode==false?(
             <div className='focusMenu' style={this.props.mode==0?{backgroundColor: 'royalblue'}:{backgroundColor: 'red'}}>
