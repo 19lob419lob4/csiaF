@@ -280,6 +280,7 @@ class Menu extends React.Component {
     this.setState({subjects:updatedStaticData,activeTopic:0})
     
     setTimeout(()=>this.updateSubjectData(),100);
+    setTimeout(()=>this.getData(),100);
     this.forceUpdate();
     
   }
