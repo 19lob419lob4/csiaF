@@ -212,7 +212,6 @@ class Menu extends React.Component {
     
     axios.post(domain + '/subjects/',{subjectName:this.state.addSubject})
       .then(response => {
-        this.getData()
       })
       .catch(error =>{
         //console.log(error)
@@ -222,10 +221,10 @@ class Menu extends React.Component {
     setTimeout(()=>this.getData(),100);
     setTimeout(()=>this.updateSubjectData(),100);    
     setTimeout(()=>{
-      this.setState({addSubjectMode:true},100)
+      this.setState({addSubjectMode:true},200)
     })
     setTimeout(()=>{
-      this.setState({addSubjectMode:false},200)
+      this.setState({addSubjectMode:false},400)
     })
     this.forceUpdate();
 
