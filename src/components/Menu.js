@@ -209,10 +209,10 @@ class Menu extends React.Component {
 
   updateSubjects=async(e)=>{
     e.preventDefault();
-    this.getData();
+    
     axios.post(domain + '/subjects/',{subjectName:this.state.addSubject})
       .then(response => {
-        //console.log(response)
+        this.getData()
       })
       .catch(error =>{
         //console.log(error)
