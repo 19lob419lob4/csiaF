@@ -219,6 +219,7 @@ class Menu extends React.Component {
     this.forceUpdate();
     this.setState({addSubjectMode:false,addSubject:''})
     setTimeout(()=>this.getData(),100);
+    setTimeout(()=>this.updateSubjectData(),100);    
     this.forceUpdate();
 
   }
